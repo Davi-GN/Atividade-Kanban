@@ -90,6 +90,9 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+li:hover {
+    border: dashed 1px;
+}
 
 li button {
     background: #dc3545;

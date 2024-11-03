@@ -15,6 +15,7 @@ button.addEventListener("click", () => {
     const li = document.createElement("li");
     const btn = document.createElement("button");
 
+    li.setAttribute("draggable", "true");
     li.textContent = input.value;
     btn.textContent = "X";
     li.appendChild(btn);
@@ -26,4 +27,4 @@ button.addEventListener("click", () => {
         count();
     }
     count();
-})
+});
