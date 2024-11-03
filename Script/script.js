@@ -10,6 +10,13 @@ const count  = () => {
     length.textContent = list.childElementCount;
 }
 
+// Focus addBtn
+document.addEventListener("keydown", (e) => {
+    if (e.key == "/") {
+       input.focus(); 
+    }
+})
+
 // Add
 button.addEventListener("click", () => {
     const li = document.createElement("li");
