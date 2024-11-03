@@ -16,6 +16,9 @@ button.addEventListener("click", () => {
     const btn = document.createElement("button");
 
     li.setAttribute("draggable", "true");
+
+    li.id = Math.random().toString(16).slice(2);
+
     li.textContent = input.value;
     btn.textContent = "X";
     li.appendChild(btn);
